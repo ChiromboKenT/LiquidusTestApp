@@ -56,7 +56,7 @@ const App = () => {
         text: inputText,
         type: 'text',
       };
-      setMessages(prevMessages => [newMessage, ...prevMessages]);
+      setMessages(prevMessages => [...prevMessages, newMessage]);
     } catch (error) {
       console.error('Error sending message:', error);
     }
